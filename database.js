@@ -15,11 +15,15 @@ function saveData(cal) {
 
     function loadData() {
       const stored = localStorage.getItem("userInfo");
+      const element = document.getElementById("output")
+      element.innerHTML = ""
 
       if (stored) {
         const data = JSON.parse(stored);
-        document.getElementById("output").innerText = 
-          `Username: ${data.username}\nSaved At: ${data.savedAt}\nCalories: ${data.calories}`;
+            const text = `Username: ${data.username}\nSaved At: ${data.savedAt}\nCalories: ${data.calories}`;
+            const safeData = document.createTextNode(text)
+            element.appendChild(safeData)
+
       } else {
         document.getElementById("output").innerText = "No data found.";
       }
