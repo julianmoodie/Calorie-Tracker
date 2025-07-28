@@ -1,1 +1,26 @@
+<input type="text" id="product-search" placeholder="Search for a product...">
+<select id="results"></select>
+<li id="all-selected-foods"></li>
 
+<script>
+    const query = document.getElementById("product-search").addEventListener('input', async function () {
+
+        const api = `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${encodeURIComponent(query)}&search_simple=1&action=process&fields=product_name,nutriments/energy-kcal_100g&json=1&page_size=10`;
+
+        try {
+            const reponse = await fetch(api);
+            const data = await reponse.json();
+            document.getElementById("results").innerHTML = ""
+
+            const items = (data.items || []).map(item => ({
+                product: item.product_name || "No product name",
+                calories: item.energy-kcal_100g || "No calories for product found",
+            }))
+            document.getElementById("results").innerHTML = items || "Error";
+        }
+        catch {
+            console.log(error)
+        }
+        //Parse user selection
+          //
+<script>
