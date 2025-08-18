@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Food Search with Calories (English)</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+
             margin: 20px;
+            background: #121212
         }
+
+        .text {
+            color:#ffffff;
+            text-align: center;
+        }
+
         #product-search, #results {
             width: 300px;
             padding: 5px;
             margin-bottom: 10px;
         }
         li {
-            background: #f5f5f5;
+            background: #7a0909;
             padding: 5px;
             border-radius: 4px;
             margin-bottom: 5px;
         }
+
+        h1 {
+            color:#ffffff;
+        }
+
+        button{
+            background: rgba(0, 0, 0, 0.267);
+            color: white;
+            border-radius: 10px;
+            border-color: white;
+            padding: 10px;
+            font-size: 25px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome, <span id="username-display"></span>!</h1>
+    
+    <h1>Welcome, <span id="username-display"></span>Guest</h1>
+    <header class = "text">
     <h1>Food Search (English + Calories)<span id="currentUser"></span></h1>
     <input type="text" id="product-search" placeholder="Search for a product...">
     <select id="results"></select>
@@ -112,5 +136,6 @@
 
 <button onclick="window.location.href='index.html'">Go Back</button>
 
+</header>
 </body>
 </html>
