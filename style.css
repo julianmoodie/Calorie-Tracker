@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', Verdana, sans-serif;
+    margin: 0;
 }
 
 .text {
@@ -29,7 +30,7 @@ body {
     width: 800px;
     height: 60px;
     font-size: 60px;
-    background: rgba(0, 0, 0, 0.267);
+    border-color: rgba(255, 255, 255, 0.452);
     border-color: white;
     color: white;
 }
@@ -74,7 +75,7 @@ button{
     background: rgba(0, 0, 0, 0.267);
     color: white;
     border-radius: 10px;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.452);
     padding: 10px;
     font-size: 25px;
     cursor: pointer;
@@ -83,4 +84,75 @@ button{
 
 button:hover{
     background-color: rgba(255, 255, 255, 0.267);;
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url(BG1.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.dash h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.dash-search {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 1200px;
+    
+}
+
+#product-search,
+#results {
+    height: 40px;
+    width: 700px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.267);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.452);
+}
+
+
+#results {
+    width: 700px;
+    height: 40px;
+}
+
+.dash-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+.dash-buttons button {
+    height: 40px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.452);
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.dash-buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.267);
 }
