@@ -6,16 +6,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Find User Data</h1>
+    <nav class="navbar">
+        <div class="nav-header">Calorie Database</div>
+        <div class="nav-load">
+            <span>Back To Home</span>
+            <button onclick="window.location.href='index.html'">Go Back</button>
+        </div>
+    </nav>
 
-    <input type="text" id="username-input" placeholder="Enter username to load" />
-<button id="load-user-btn">Load User Data</button>
-<p> Latest Total Calories: <span id="TotalCal">N/A</span></p>
-<div id="load-result"></div>
+    <header class="text">
+        <h1>Find User Data</h1>
+        <form id="load-user-form" onsubmit="return false;">
+            <input type="text" id="username-input" placeholder="Enter username to load" />
+            <button id="load-user-btn">Load User Data</button>
+        </form>
+
+        <p class="latestCal"> Latest Total Calories: <span id="TotalCal">N/A</span></p>
+        <div id="load-result"></div>
+    </header>
 
 <script src="loadData.js"></script>
       <!--<script src="database.js"></script>-->
 
-<button onclick="window.location.href='index.html'">Go Back</button>
+
 </body>
 </html>
