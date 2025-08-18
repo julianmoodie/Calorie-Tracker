@@ -1,25 +1,33 @@
 <html>
 <head>
 <title>Calorie Tracker</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h2>Please input your username</h2>
-<form id="username-form">
-    <input type="text" id="username" name="username" required>
-    <button type="submit">Submit</button>
-</form>
 
-<script src="form-handler.js"></script>
+<nav class="navbar">
+  <div class="nav-header">Calorie Tracker Website</div>
+  <div class="nav-load">
+    <span>Load Older Data</span>
+    <button onclick="window.location.href='load.html'">Load</button>
+  </div>
+</nav>
+<header class = "text">
+  <h2>Please Input Your Username</h2>
+  <form id="username-form">
+      <input type="text" id="username" name="username" required>
+      <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-handler.js"></script>
 
   <!--<script src="database.js"></script>-->
 
-<p></p>
-<p></p>
-    <h2>Load older data</h2>
-    <button onclick="window.location.href='load.html'">Load</button>
-
+  <p></p>
+  <p></p>
+    
+</header>
 </form>
 
       <!--<script src="database.js"></script>-->
