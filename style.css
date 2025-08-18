@@ -218,3 +218,17 @@ button:hover{
 #save-btn:hover{
     background-color: rgba(85, 85, 85, 0.685);
 }
+
+#load-result {
+    font-size: 40px;
+    text-align: center;
+}
+
+.latestCal {
+    font-size: 60px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
