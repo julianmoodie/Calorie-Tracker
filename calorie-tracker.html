@@ -29,10 +29,18 @@
         </div>
     </header>
 
-    <h2>Selected Foods</h2>
-    <ul id="all-selected-foods"></ul>
-
-    <ul id="Total-calories"></ul>
+    <div class="calorie-container">
+        <div class="left-calorie">
+            <h2>Selected Foods</h2>
+            <ul id="all-selected-foods"></ul>
+        </div>
+        <div class="right-calorie">
+            <h2>Total Calories Today</h2>
+            <div id="TotalCal"></div>
+            <ul id="Total-calories"></ul>
+            <button id="save-btn">Save</button>
+        </div>
+    </div>
 
     <script>
         const searchInput = document.getElementById("product-search");
@@ -104,8 +112,6 @@
     <!--<script src="database.js"></script>-->
     <script src="load-username.js"></script>
     
-    <h1>The Total Calorie for the day is:  <span id="TotalCal"></span></h1>
-    <button id="save-btn">Save</button>
     <script src="saveData.js"></script>
 
 
