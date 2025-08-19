@@ -41,4 +41,4 @@ https://streamable.com/0l8dx1
 
 Here is our final video where we each go over our contributions to the project:
 
-[![Watch the video](https://img.youtube.com/vi/https://www.youtube.com/watch?v=KRbJtlEYCWk/0.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=KRbJtlEYCWk)
+[![Watch the video](https://img.youtube.com/vi/https://www.youtube.com/watch?v=KRbJtlEYCWk/0.jpg)](https://www.youtube.com/watch?v=KRbJtlEYCWk)
