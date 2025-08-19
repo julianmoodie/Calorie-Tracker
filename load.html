@@ -14,13 +14,15 @@
         </div>
     </nav>
 
-    <header class="text">
+    <header class="findUser">
         <h1>Find User Data</h1>
-        <form id="load-user-form" onsubmit="return false;">
+        <form id="load-user-form" class="user-form" onsubmit="return false;">
             <input type="text" id="username-input" placeholder="Enter username to load" />
             <button id="load-user-btn">Load User Data</button>
         </form>
+    </header>
 
+    <header class="display-user-cals">
         <p class="latestCal"> Latest Total Calories: <span id="TotalCal">N/A</span></p>
         <div id="load-result"></div>
     </header>
