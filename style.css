@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     background: url(BG1.jpg);
     background-size: cover;
     justify-content: center;
